@@ -1,0 +1,155 @@
+<br /><br /><br /><br /><br /><br />
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4 p-4 shadow-lg">
+    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+      <div class="row">
+        <div class="text-center">
+          <h1 class="mt-5 mb-4">SIGN UP NOW!</h1>
+          <hr />
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <input
+            type="text"
+            name="name"
+            formControlName="fname"
+            required
+            pattern="[a-zA-Z ]+$"
+            minlength="3"
+            class="form-control"
+            placeholder="Enter Your FName"
+          />
+        </div>
+        <div class="col-md-5">
+          <input
+            type="text"
+            name="name"
+            formControlName="lname"
+            required
+            pattern="[a-zA-Z ]+$"
+            minlength="3"
+            class="form-control"
+            placeholder="Enter Your LName"
+          />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <input
+            type="email"
+            formControlName="email"
+            name="email"
+            required
+            email
+            class="form-control"
+            placeholder="Enter Your email"
+          />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <input
+            type="password"
+            name="password"
+            formControlName="password"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+            required
+            class="form-control my-2"
+            placeholder="Enter Your password"
+          />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="form-group col-md-5">
+          <select
+            required
+            name="status"
+            formControlName="state"
+            class="form-select"
+          >
+            <option value="" selected>Country</option>
+            <option value="Pak">Pak</option>
+            <option value="Ind">Ind</option>
+            <option value="Aus">Aus</option>
+            <option value="Usa">Usa</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <input
+            type="date"
+            name="date"
+            formControlName="date"
+            required
+            min="1980-01-01"
+            max="2023-12-31"
+            class="form-control"
+            placeholder="Enter Your email"
+          />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="form-group col-md-5">
+          <input
+            class="me-1"
+            type="radio"
+            name="gender"
+            formControlName="gender"
+            required
+            value="male"
+          />
+          <label class="me-3" for="">Male</label>
+          <input
+            class="me-1"
+            type="radio"
+            name="gender"
+            formControlName="gender"
+            required
+            value="female"
+          />
+          <label class="me-3" for="">Female</label>
+          <input
+            class="me-1"
+            type="radio"
+            name="gender"
+            formControlName="gender"
+            required
+            value="other"
+          />
+          <label class="me-3" for="">Other</label>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="d-grid">
+            <button class="btn btn-primary my-3">submit</button>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <a routerLink="/login">Already a User? Click to login!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>

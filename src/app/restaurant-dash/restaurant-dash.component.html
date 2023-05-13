@@ -1,0 +1,428 @@
+<nav class="navbar navbar-light text-white bg-dark">
+  <div class="container-fluid">
+    <p>
+      <i class="fa-solid abc fa-utensils"></i>
+      <span class="heading1"> Resturant </span>
+      <small class="fs-5">Record App</small>
+    </p>
+    <div class="d-flex">
+      <button
+        type="button"
+        class="btn btn-secondary px-4 rounded-4"
+        (click)="clickAddRes()"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <i class="fa-sharp fa-solid fa-plus"></i> Add Resturant</button
+      >&nbsp;&nbsp;
+      <button
+        routerLink="/login"
+        class="btn btn-danger rounded-circle"
+        (click)="logout()"
+      >
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="p-3 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold heading2">Resturant Records Management</h1>
+        <p class="col-md-8 fs-4">
+          We are a global nation of technology addicts who can’t get enough of
+          our phones. With a current worldwide population of 7.9 billion people
+          and 5.2 billion unique mobile users, mobile phones are used by more
+          than two-thirds of the world’s populationDespite this, many restaurant
+          owners are still unaware of the enhanced engagement and penetration
+          that only SMS marketing campaigns can provide.
+        </p>
+        <a
+          class="btn btn-outline-info btn-lg px-5 text-uppercase text-dark disabled"
+          target="_blank"
+        >
+          Unavailable!! <i class="fa-solid fa-bell-slash"></i
+        ></a>
+      </div>
+    </div>
+    <div class="row m-0 p-0">
+      <div class="col-md-7">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img
+                src="https://www.settentrionaleesplanade.it/wp-content/uploads/sites/302/2021/06/settentrionale_esplanade_ristorante_terrazza_gallery_02-1200x500.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://u.profitroom.pl/2020-vislowresort-pl/thumb/1200x500/uploads/TKP_Vislow_RestauracjaWntrza-116.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="https://lasentahotel.com/wp-content/uploads/sites/82/2020/04/Lu%CC%81a-Lounge-Restaurant-1-floor-4-1200x500.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"data-bs-interval="2000">
+          <img src="https://www.settentrionaleesplanade.it/wp-content/uploads/sites/302/2021/06/settentrionale_esplanade_ristorante_terrazza_gallery_02-1200x500.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="https://u.profitroom.pl/2020-vislowresort-pl/thumb/1200x500/uploads/TKP_Vislow_RestauracjaWntrza-116.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="https://lasentahotel.com/wp-content/uploads/sites/82/2020/04/Lu%CC%81a-Lounge-Restaurant-1-floor-4-1200x500.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+      </div>
+      <div class="col-md-5">
+        <div class="px-5 py-0">
+          <div class="container-fluid py-4">
+            <h1 class="display-5 fw-bold heading3">
+              <i class="fa-sharp fa-lg fa-solid fa-graduation-cap"></i> Crash
+              Courses (Great Oppurtunity)
+            </h1>
+            <ul class="col-md-10 fs-4">
+              <li>Hotel Management.</li>
+              <li>Cooking.</li>
+              <li>Italian Cooking.</li>
+              <li>Inventory Control.</li>
+              <li>Odoo.</li>
+              <li>Food Safety.</li>
+              <li>Inventory Management.</li>
+              <li>Inventory Management.</li>
+            </ul>
+            <a
+              class="btn btn-outline-info btn-lg px-5 text-uppercase text-dark disabled"
+              target="_blank"
+            >
+              <b> UpComing!!</b> <i class="fa-solid fa-bell-slash"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center my-2 mt-3">
+      <h1 class="heading2">RECORDS</h1>
+    </div>
+    <table class="table table-bordered text-center bg-light">
+      <thead>
+        <tr>
+          <th>Resturant ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Address</th>
+          <th>Service</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of allRestaurantData; index as a">
+          <td>{{ a + 1 }}</td>
+          <td>{{ i.name }}</td>
+          <td>{{ i.email }}</td>
+          <td>{{ i.mobile }}</td>
+          <td>{{ i.address }}</td>
+          <td>{{ i.service }}</td>
+          <td class="text-start">
+            &nbsp;<button
+              class="btn btn-success px-4 rounded-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              (click)="onEditRes(i)"
+            >
+              <i class="fa-solid fa-pen-to-square"></i> Edit</button
+            >&nbsp;&nbsp;
+            <button
+              class="btn btn-danger px-4 rounded-3"
+              (click)="deleteRes(i.id)"
+            >
+              <i class="fa-sharp fa-solid fa-trash"></i> Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header shadow">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Resturant Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="formValue" class="p-4">
+              <div class="mb-3">
+                <br />
+                <input
+                  type="text"
+                  required
+                  formControlName="name"
+                  placeholder="Enter Your Name"
+                  class="form-control shadow"
+                  id="formGroupExampleInput"
+                />
+              </div>
+              <div class="mb-3">
+                <br />
+                <input
+                  type="text"
+                  required
+                  class="form-control shadow"
+                  placeholder="Enter Your Email"
+                  formControlName="email"
+                  id="formGroupExampleInput2"
+                />
+              </div>
+              <div class="mb-3">
+                <br />
+                <input
+                  type="text"
+                  required
+                  class="form-control shadow"
+                  placeholder="Enter Your Phone"
+                  formControlName="mobile"
+                  id="formGroupExampleInput"
+                />
+              </div>
+              <div class="mb-3">
+                <br />
+                <input
+                  type="text"
+                  required
+                  class="form-control shadow"
+                  placeholder="Enter Your Address"
+                  formControlName="address"
+                  id="formGroupExampleInput2"
+                />
+              </div>
+              <div class="mb-2">
+                <br />
+                <input
+                  type="text"
+                  required
+                  class="form-control shadow"
+                  placeholder="Enter Your Service"
+                  formControlName="service"
+                  id="formGroupExampleInput2"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-success rounded-4"
+              *ngIf="showBtn"
+              (click)="UpdateRes()"
+            >
+              <i class="fa-solid fa-check"></i> Update
+            </button>
+            <button
+              type="submit"
+              class="btn btn-success rounded-4"
+              *ngIf="showAdd"
+              (click)="addResturant()"
+            >
+              <i class="fa-solid fa-cloud-arrow-up"></i> Save changes
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger rounded-4"
+              data-bs-dismiss="modal"
+            >
+              <i class="fa-solid fa-xmark"></i> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <!-- Footer -->
+  <div class="container">
+ <div class="row">
+  <div class="col-md-8">
+   <iframe class="rounded-3 shadow"
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.181869382747!2d67.08691841544555!3d24.925873548770326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f81253bebc3%3A0xb1e2167e4d01d16!2sSplendid%20Accounts!5e0!3m2!1sen!2s!4v1679061176364!5m2!1sen!2s"
+   width="0"
+   height="400"
+   allowfullscreen=""
+   loading="lazy"
+   referrerpolicy="no-referrer-when-downgrade"
+ ></iframe>
+  </div>
+  <div class="col-md-4 bg-light rounded-5 p-2">
+    <br><br>
+    <div class="text-center mt-4"><h3 class="heading1">JOIN NOW!</h3>
+    <p>
+      Joining the world number best!!!
+    </p></div>
+    <div class="text-center"><button class="btn btn-warning px-5 rounded-4 heading4">JOIN</button></div>
+  </div>
+
+ </div>
+  </div>
+  <footer
+    class="row text-center p-3 text-dark"
+    style="background-color: rgb(236, 241, 241)"
+  >
+    <!-- Grid container -->
+    <div class="">
+      <!--Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 mt-3">
+          <h6 class="text-uppercase mb-2 fw-bold text-left">Company name</h6>
+          <p>
+            Looking for a unique dining experience? Look no further! Our
+            restaurant is now open and ready to take you on a culinary journey
+            you won't forget
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 mt-3">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <h6 class="text-uppercase mb-4 fw-bold">Products</h6>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <li>
+                <small class="text-dark">Fast Food</small>
+              </li>
+              <li>
+                <small class="text-dark">Chineese</small>
+              </li>
+              <li>
+                <small class="text-dark">Drinks</small>
+              </li>
+            </div>
+            <div class="col-md-6">
+              <li>
+                <small class="text-dark">Italian</small>
+              </li>
+              <li>
+                <small class="text-dark">Singapurian</small>
+              </li>
+              <li>
+                <small class="text-dark">Desi Food</small>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 mt-3">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <h6 class="text-uppercase mb-4 fw-bold">Contact</h6>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p><i class="fas fa-home mr-3"></i> Karachi,Sindh,Pakistan</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-3">
+          <h6 class="text-uppercase mb-4 fw-bold">Follow us</h6>
+
+          <!-- Facebook -->
+          <a class="px-2 text-dark"><i class="fa-brands fa-facebook"></i></a>
+          <a class="px-2 text-dark"><i class="fa-brands fa-twitter"></i></a>
+          <a class="px-2 text-dark"><i class="fa-brands fa-google"></i></a>
+          <a class="px-2 text-dark"><i class="fa-brands fa-instagram"></i></a>
+          <a class="px-2 text-dark"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="px-2 text-dark"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+    <hr />
+    <!-- Copyright -->
+    <div class="text-center">
+      © 2023 Copyright:
+      <a class="text-dark" href="#">Restaurant.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
+
+<!-- Footer -->
+<!-- End of .container -->

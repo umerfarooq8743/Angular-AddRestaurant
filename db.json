@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Lucky Broast ",
+      "email": "luckybroast@gmail.com",
+      "address": "Model Colony Malir Karachi ",
+      "mobile": "021345677435",
+      "service": "Fast Food | BBQ | Drinks | Desert"
+    },
+    {
+      "id": 2,
+      "name": "Lee Broast",
+      "email": "leebroast@gmail.com",
+      "address": "sabir colony malir karachi",
+      "mobile": "02154567567",
+      "service": "biryani fry items"
+    },
+    {
+      "id": 3,
+      "name": "Noorani Restaurant",
+      "email": "noorani@gmail.com",
+      "address": "Gulshan e iqbal  karachi",
+      "mobile": "0213376577588",
+      "service": "fast food, bbq fry desert drinks pizza chinese"
+    }
+  ],
+  "SignUp": [
+    {
+      "fname": "Karachi",
+      "lname": "Karachi",
+      "email": "afaasffaf",
+      "password": "afafasffaff",
+      "date": "",
+      "state": "Aus",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "fname": "umer",
+      "lname": "farooq",
+      "email": "umer@gmail.com",
+      "password": "seaway00",
+      "date": "2023-03-07",
+      "state": "Pak",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "fname": "abdul",
+      "lname": "wasay",
+      "email": "abdulwasay@gmail.com",
+      "password": "123456",
+      "date": "2023-02-27",
+      "state": "Usa",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "fname": "sami",
+      "lname": "mamji",
+      "email": "afaasffaf@gmail.com",
+      "password": "dsfstsat325",
+      "date": "2023-02-27",
+      "state": "Aus",
+      "gender": "male",
+      "id": 4
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
